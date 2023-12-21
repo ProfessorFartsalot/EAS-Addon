@@ -15,6 +15,19 @@ Please report bugs to the Issues page using the issue template provided by GitHu
 
 - The block will only alert if the sensitivity value for that particular message is met. It will issue a watch and then a warning, then the block will not output anything else until the detected signal is less than 2. This is to avoid spamming clients on the server. If you want it to alert for stronger storms, set your warning sensitivity higher.
 
+You may use the following sensitivity values for watches/warnings:
+```
+2: Thunderstorm
+3: Supercell
+4: EF0 Tornado
+5: EF1 Tornado
+6: EF2 Tornado
+7: EF3 Tornado
+8: EF4 Tornado
+9: EF5 Tornado
+10+: Custom Tornado
+```
+
 # ADVANCED USES
 You may place more than one EAS Block on the same Frequency, each with their own sensitivity values if you'd like to alert for more severe storms.
 
