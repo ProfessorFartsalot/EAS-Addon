@@ -25,7 +25,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
  - OS: [e.g. Windows or Linux]
- - Forge Build [example: 1.12.2-2860]
+ - Forge Build [e.g.: 1.12.2-2860]
  - Mods [e.g. Weather2Remastered@2.8.12, CoroUtil@1.2.37]
 
 **Additional context**
