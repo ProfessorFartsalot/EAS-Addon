@@ -16,9 +16,12 @@ Please report bugs to the Issues page using the issue template provided by GitHu
 - The block will only alert if the sensitivity value for that particular message is met. It will issue a watch and then a warning, then the block will not output anything else until the detected signal is less than 2. This is to avoid spamming clients on the server. If you want it to alert for stronger storms, set your warning sensitivity higher.
 
 # ADVANCED USES
-- You may place more than one EAS Block on the same Frequency, each with their own sensitivity values if you'd like to alert for more severe storms.
-- For example: eas block #1 is on 162.465, and it uses the default sensitivity settings. It will display the configured message for Supercell and EF0 tornado stages.
+You may place more than one EAS Block on the same Frequency, each with their own sensitivity values if you'd like to alert for more severe storms.
+
+For example: eas block #1 is on 162.465, and it uses the default sensitivity settings. It will display the configured message for Supercell and EF0 tornado stages.
+
 Now, you introduce eas block #2, connected to the same advanced storm sensor. It is also set to 162.465 (thus matching eas block #1).
+
 Set its sensitivity to issue a watch at 15 and a warning at 5. This block would not issue a watch at all and would instead issue a warning for ef1 tornadoes.
 
 This allows you to issue a second warning if the storm has intensified.
