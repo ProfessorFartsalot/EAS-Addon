@@ -17,9 +17,7 @@ Please report bugs to the Issues page using the issue template provided by GitHu
 
 # ADVANCED USES
 - You may place more than one EAS Block on the same Frequency, each with their own sensitivity values if you'd like to alert for more severe storms.
-
-For example: eas block #1 is on 162.465, and it uses the default sensitivity settings. It will display the configured message for Supercell and EF0 tornado stages.
-
+- For example: eas block #1 is on 162.465, and it uses the default sensitivity settings. It will display the configured message for Supercell and EF0 tornado stages.
 Now, you introduce eas block #2, connected to the same advanced storm sensor. It is also set to 162.465 (thus matching eas block #1).
 Set its sensitivity to issue a watch at 15 and a warning at 5. This block would not issue a watch at all and would instead issue a warning for ef1 tornadoes.
 
