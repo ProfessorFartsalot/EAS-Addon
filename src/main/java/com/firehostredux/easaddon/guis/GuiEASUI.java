@@ -173,7 +173,7 @@ public class GuiEASUI extends EventHandler.ModElement {
 				 WarningMessage.setMaxStringLength(32767);
 			}
 			else
-				WarningMessage.setText(world.getTileEntity(pos).getTileData().getString("easWarningMessage"));
+				WarningMessage.setText(world.getTileEntity(pos).getTileData().getString("easWarnMessage"));
 			this.buttonList.add(new GuiButton(0, this.guiLeft + 147, this.guiTop + 105, 45, 20, "Done"));
 			Frequency = (GuiTextField) guistate.get("text:Frequency");
 			if (Frequency == null){
