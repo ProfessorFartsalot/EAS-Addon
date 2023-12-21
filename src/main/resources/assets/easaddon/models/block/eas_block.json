@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "easaddon:blocks/eas_blockdn",
+    "up": "easaddon:blocks/eas_blockup",
+    "north": "easaddon:blocks/eas_blockft",
+    "east": "easaddon:blocks/eas_blocklf",
+    "south": "easaddon:blocks/eas_blockbk",
+    "west": "easaddon:blocks/eas_blockrt",
+    "particle": "easaddon:blocks/eas_blockdn"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "eas": {
+    "category": "block",
+    "subtitle": "subtitles.eas",
+    "sounds": [
+      {
+        "name": "easaddon:eas",
+        "stream": false
+      }
+    ]
+  }
+}

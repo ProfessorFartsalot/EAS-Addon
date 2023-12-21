@@ -1,0 +1,42 @@
+{
+    "group": "easaddon",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "012",
+      "345",
+      "678"
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:blaze_rod"
+      },
+      "1": {
+        "item": "minecraft:repeater"
+      },
+      "2": {
+        "item": "minecraft:blaze_rod"
+      },
+      "3": {
+        "item": "minecraft:comparator"
+      },
+      "4": {
+        "item": "minecraft:redstone_block"
+      },
+      "5": {
+        "item": "minecraft:comparator"
+      },
+      "6": {
+        "item": "minecraft:iron_block"
+      },
+      "7": {
+        "item": "minecraft:iron_block"
+      },
+      "8": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "easaddon:eas_block",
+      "count": 1
+    }
+  }
