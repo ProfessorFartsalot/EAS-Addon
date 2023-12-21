@@ -6,11 +6,14 @@ Please report bugs to the Issues page using the issue template provided by GitHu
 # HOW TO
 - Simply place the EAS Transmitter next to an advanced storm sensor and then right click it to enter a watch message, warning message, and set a frequency if desired (or use the preset default frequency).
 - Set the EAS Receiver to the same frequency as your transmitter block to receive its EAS transmissions. You can also toggle the EAS sounds on and off via the EAS Receiver's UI.
-
+- The block does not output anything at all by default. You must enter your own messages.
+  
 # SENSITIVITY
 - You can also set the sensitivity (required redstone signal) for each message. Warning: Do not set the sensitivity to the same for both, watches will not work. The warning sensitivity must be a higher value than the watch sensitivity, as warnings take priority over watches.
 
 - The default sensitivity values will display your watch message when the advanced storm sensor detects a supercell and will display a warning message when it detects a ef0 tornado. You can set the sensitivity of the warning message to 5 to detect ef1 tornadoes.
+
+- The block will only alert if the sensitivity value for that particular message is met. It will issue a watch and then a warning, then the block will not output anything else until the detected signal is less than 2. This is to avoid spamming clients on the server. If you want it to alert for stronger storms, set your warning sensitivity higher.
 
 # CRAFTING RECIPES
 
