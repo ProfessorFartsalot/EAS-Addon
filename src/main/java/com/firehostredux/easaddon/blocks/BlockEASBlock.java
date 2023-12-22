@@ -345,7 +345,6 @@ public class BlockEASBlock extends EventHandler.ModElement {
     		return true;
     	return false;
     }
-    private boolean doEAS = true;
     @SuppressWarnings("deprecation")
 	@Override
     public void neighborChanged(IBlockState state, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos)
@@ -354,11 +353,10 @@ public class BlockEASBlock extends EventHandler.ModElement {
         if (world.isRemote) return;
         Integer easSignal = world.isBlockIndirectlyGettingPowered(new BlockPos(pos.getX(), pos.getY(), pos.getZ()));
         NBTTagCompound easBlock = world.getTileEntity(pos).getTileData();
-        easWarning = easSignal >= easBlock.getInteger("easWarnSensitivity");
-        easWatch = easWarning ? false : easSignal >= easBlock.getInteger("easWatchSensitivity");
-        doEAS = (doEAS ? true : easSignal < 2);
+        easWarning = easSignal == easBlock.getInteger("easWarnSensitivity");
+        easWatch = easWarning ? false : easSignal == easBlock.getInteger("easWatchSensitivity");
         TextFormatting TextFormatEAS = easWarning ? TextFormatting.DARK_RED : TextFormatting.GOLD;
-        if ((easWarning || easWatch) && doEAS)
+        if (easWarning || easWatch)
         {
             List<EntityPlayer> players = getLinkedEASClient(world);
             for (EntityPlayer player : players)
@@ -371,7 +369,6 @@ public class BlockEASBlock extends EventHandler.ModElement {
                     player.sendMessage(new TextComponentString((TextFormatEAS + "--- EAS BROADCAST REQUESTED ---\n" + TextFormatting.RESET + easBlock.getString(easWarning  ? "easWarnMessage" : "easWatchMessage") + "\n" + TextFormatEAS + "------------------------------")));
                 }
             }
-            doEAS = false;
         }
     }
     @Override
