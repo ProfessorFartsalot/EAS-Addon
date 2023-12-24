@@ -7,7 +7,7 @@ Please report bugs to the Issues page using the issue template provided by GitHu
 - Simply place the EAS Transmitter next to an advanced storm sensor and then right click it to enter a watch message, warning message, and set a frequency if desired (or use the preset default frequency).
 - Set the EAS Receiver to the same frequency as your transmitter block to receive its EAS transmissions. You can also toggle the EAS sounds on and off via the EAS Receiver's UI.
 - The block does not output anything at all by default. You must enter your own messages.
-  
+- **NOTE: YOU MAY ONLY RECEIVE ALERTS FOR ONE STATION AT A TIME. THERE IS NO REASON TO CARRY MORE THAN ONE EAS RECEIVER.**
 # SENSITIVITY
 - You can also set the sensitivity (required redstone signal) for each message. Warning: Do not set the sensitivity to the same for both, watches will not work. The warning sensitivity must be a higher value than the watch sensitivity, as warnings take priority over watches.
 
