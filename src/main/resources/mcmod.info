@@ -3,7 +3,7 @@
     "modid": "easaddon",
     "name": "EAS Addon",
     "description": "An EAS system for Minecraft. Special thanks to Buff_Sylveon (eas block texture) and Mrbt0907 (teaching me netcode).",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "credits": "https://github.com/ProfessorFartsalot/",
     "logoFile": "assets/easaddon/textures/professor.png",
     "mcversion": "1.12.2",

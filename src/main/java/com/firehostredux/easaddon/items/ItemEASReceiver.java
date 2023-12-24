@@ -43,7 +43,7 @@ public class ItemEASReceiver extends EventHandler.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			setMaxDamage(0);
-			maxStackSize = 64;
+			maxStackSize = 1;
 			setUnlocalizedName("eas_receiver");
 			setRegistryName("eas_receiver");
 			setCreativeTab(TabEASAddon.tab);
